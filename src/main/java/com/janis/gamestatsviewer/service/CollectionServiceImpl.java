@@ -3,8 +3,10 @@ package com.janis.gamestatsviewer.service;
 import jakarta.annotation.PostConstruct;
 import java.io.IOException;
 import java.nio.file.Path;
+import org.springframework.stereotype.Service;
 import tech.tablesaw.api.Table;
 
+@Service
 public class CollectionServiceImpl implements CollectionService {
 
 	private final FilesStorageService filesService;

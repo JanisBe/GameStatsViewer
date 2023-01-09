@@ -4,8 +4,10 @@ import com.janis.gamestatsviewer.service.CollectionService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 import tech.tablesaw.api.Table;
 
+@RestController
 public class TableRestController {
 
 	private final CollectionService collectionService;
